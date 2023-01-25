@@ -7,7 +7,6 @@
 # english_words_alpha_set contains no punctuation
 from english_words import english_words_alpha_set
 import random
-import sys
 import os
 import argparse
 import ast
@@ -478,3 +477,4 @@ if __name__ == '__main__':
         pass
     
     hangman(args.game_difficulty, args.word_difficulty, args.word)
+    
