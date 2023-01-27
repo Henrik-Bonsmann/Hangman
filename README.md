@@ -23,8 +23,8 @@ The `hangman()` function is set up to work with default values for a quick and e
     - `hard`: Choose a word with a ScrabbleScore above 1
     - Additionally, a list of floats can be provided to be used as a range of ScrabbleScores for the choosen word. `[.2,.8]` will choose a random word with a ScrabbleScore of between 0.2 and 0.8.
     
-3. `word` provide a custom word for someone else to solve.
-    The string needs to consist of alphabetical characters common to the english alphabet. Special characters of any sort are not allowed!
+3. `word`: provide a custom word for someone else to solve.
+    This option overwrites `word_difficulty` and is mutually exclusive with it. The string needs to consist of alphabetical characters common to the english alphabet. Special characters of any sort are not allowed!
     
 ### The ScrabbleScore
 To calculate the difficulty of guessing a certain word, this game calculates a ScrabbleScore. All *unique* characters in a word are scored based on their value in the word-laying game "Scrabble" - with the exception of "E" and "A" which are so common that they are assigned a score of 0. The score is summed up and divided by the total number of letters in the word. Thus shorter words and words including rarer letters are deemed more difficult to guess.
